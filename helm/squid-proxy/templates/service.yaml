@@ -12,7 +12,7 @@ metadata:
     {{- end }}
     service.beta.kubernetes.io/aws-load-balancer-cross-zone-load-balancing-enabled: "true"
   {{- end }}
-  name: {{ include "resource.controller-service.name" . }}
+  name: {{ include "resource.controller.service.name" . }}
   namespace: {{ .Release.Namespace }}
   labels:
     {{- include "labels.common" . | nindent 4 }}

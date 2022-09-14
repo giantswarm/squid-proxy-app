@@ -17,6 +17,7 @@ controller:
   maxSurge: 1
   minReadySeconds: 10
   service:
+    name: squid-proxy
     public: true
 
 podSecurityPolicy:
