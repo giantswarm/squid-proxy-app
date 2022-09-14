@@ -3,7 +3,7 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
-  name: {{ include "resource.default.name" . }}-psp-user
+  name: {{ include "name" . }}-psp-user
   labels:
     {{- include "labels.common" . | nindent 4 }}
 rules:
@@ -12,22 +12,22 @@ rules:
   resources:
   - podsecuritypolicies
   resourceNames:
-  - {{ include "resource.default.name" . }}
+  - {{ include "name" . }}
   verbs:
   - use
 ---
 kind: ClusterRoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: {{ include "resource.default.name" . }}-psp
+  name: {{ include "name" . }}-psp
   labels:
     {{- include "labels.common" . | nindent 4 }}
 subjects:
 - kind: ServiceAccount
-  name: {{ include "resource.default.name" . }}
+  name: {{ include "name" . }}
   namespace: {{ .Release.Namespace }}
 roleRef:
   kind: ClusterRole
-  name: {{ include "resource.default.name" . }}-psp-user
+  name: {{ include "name" . }}-psp-user
   apiGroup: rbac.authorization.k8s.io
 {{- end }}

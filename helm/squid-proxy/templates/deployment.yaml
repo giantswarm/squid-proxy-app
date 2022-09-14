@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "resource.default.name" . }}
+  name: {{ include "name" . }}
   namespace: {{ .Release.Namespace }}
   labels:
     {{- include "labels.common" . | nindent 4 }}
@@ -25,7 +25,7 @@ spec:
       annotations:
         cluster-autoscaler.kubernetes.io/safe-to-evict: 'true'
     spec:
-      serviceAccountName: {{ include "resource.default.name"  . }}
+      serviceAccountName: {{ include "name"  . }}
       priorityClassName: system-cluster-critical
       containers:
       - name: squid
