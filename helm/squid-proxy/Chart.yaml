@@ -9,6 +9,6 @@ description: squid proxy for giantswarm internal use
 
 home: https://github.com/giantswarm/squid-proxy-app
 
-version: 0.0.0-dev # [[ .Version ]] if you're using architect instead of app-build-suite
+version: [[ .Version ]]
 annotations:
   application.giantswarm.io/team: team-hydra
