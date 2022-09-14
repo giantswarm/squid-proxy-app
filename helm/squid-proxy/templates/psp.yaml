@@ -1,0 +1,43 @@
+{{- if .Values.podSecurityPolicy.enabled -}}
+apiVersion: policy/v1beta1
+kind: PodSecurityPolicy
+metadata:
+  name: {{ include "resource.default.name" . }}
+  namespace: {{ .Release.Namespace }}
+  labels:
+    {{- include "labels.common" . | nindent 4 }}
+spec:
+  allowPrivilegeEscalation: true
+  privileged: false
+  hostNetwork: true
+  hostPorts:
+  - min: 3128
+    max: 3128
+  allowedCapabilities:
+  - NET_BIND_SERVICE
+  runAsUser:
+    rule: MustRunAs
+    ranges:
+      - min: 0
+        max: 65535
+  runAsGroup:
+    rule: MustRunAs
+    ranges:
+      - min: 1
+        max: 65535
+  seLinux:
+    rule: RunAsAny
+  supplementalGroups:
+    rule: 'MustRunAs'
+    ranges:
+      - min: 0
+        max: 65535
+  fsGroup:
+    rule: 'MustRunAs'
+    ranges:
+      - min: 0
+        max: 65535
+  volumes:
+  - 'secret'
+  - 'configMap'
+{{- end }}

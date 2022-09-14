@@ -1,0 +1,25 @@
+name: squid-proxy
+serviceType: managed
+
+project:
+  branch: "[[ .Branch ]]"
+  commit: "[[ .SHA ]]"
+
+image:
+  registry: docker.io
+  name: giantswarm/squid
+  tag: 5.2-22.04_beta
+  pullPolicy: IfNotPresent
+
+controller:
+  replicas: 3
+  maxUnavailable: 1
+  maxSurge: 1
+  minReadySeconds: 10
+  service:
+    public: true
+
+podSecurityPolicy:
+  enabled: true
+
+provider: "aws"

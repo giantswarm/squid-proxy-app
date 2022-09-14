@@ -1,0 +1,14 @@
+apiVersion: v2
+appVersion: 5.2
+
+# Please make sure your name DOES NOT end in "app" or "-app".
+name: squid-proxy
+
+# Please describe what the app provides in a sentence or two.
+description: squid proxy for giantswarm internal use
+
+home: https://github.com/giantswarm/squid-proxy-app
+
+version: 0.0.0-dev # [[ .Version ]] if you're using architect instead of app-build-suite
+annotations:
+  application.giantswarm.io/team: team-hydra

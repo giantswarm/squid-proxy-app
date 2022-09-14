@@ -1,0 +1,37 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+  {{- if .Values.baseDomain }}
+    external-dns.alpha.kubernetes.io/hostname: "proxy.{{ .Values.baseDomain }}"
+  {{- end }}
+  {{- if eq .Values.provider "aws" }}
+    {{- if not .Values.controller.service.public }}
+    service.beta.kubernetes.io/aws-load-balancer-internal: "true"
+    service.beta.kubernetes.io/aws-load-balancer-scheme: "internal"
+    {{- end }}
+    service.beta.kubernetes.io/aws-load-balancer-cross-zone-load-balancing-enabled: "true"
+  {{- end }}
+  name: {{ include "resource.controller-service.name" . }}
+  namespace: {{ .Release.Namespace }}
+  labels:
+    {{- include "labels.common" . | nindent 4 }}
+    app.kubernetes.io/component: controller
+spec:
+  allocateLoadBalancerNodePorts: true
+  externalTrafficPolicy: Local
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  loadBalancerSourceRanges:
+  - 0.0.0.0/0
+  ports:
+  - name: http
+    port: 4000
+    protocol: TCP
+    targetPort: http
+  selector:
+    {{- include "labels.selector" . | nindent 4 }}
+  type: LoadBalancer
+
