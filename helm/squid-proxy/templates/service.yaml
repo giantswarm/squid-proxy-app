@@ -4,6 +4,7 @@ metadata:
   annotations:
   {{- if .Values.baseDomain }}
     external-dns.alpha.kubernetes.io/hostname: "proxy.{{ .Values.baseDomain }}"
+    giantswarm.io/external-dns: managed
   {{- end }}
   {{- if eq .Values.provider "aws" }}
     {{- if not .Values.controller.service.public }}
