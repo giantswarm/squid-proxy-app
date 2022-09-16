@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.1.1] - 2022-09-16
 
+### Changed
+
+- Add external dns annotation on the service.
+
 ## [0.1.0] - 2022-09-16
 
 - add base template
