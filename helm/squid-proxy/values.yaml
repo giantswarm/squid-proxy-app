@@ -12,7 +12,7 @@ image:
   pullPolicy: IfNotPresent
 
 controller:
-  replicas: 3
+  replicas: 2
   maxUnavailable: 1
   maxSurge: 1
   minReadySeconds: 10
