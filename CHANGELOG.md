@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.3] - 2022-11-02
+
 ## [0.1.2] - 2022-09-26
 
 ## [0.1.1] - 2022-09-16
@@ -20,7 +22,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - add base template
 - changed: `app.giantswarm.io` label group was changed to `application.giantswarm.io`
 
-[Unreleased]: https://github.com/giantswarm/squid-proxy-app/compare/v0.1.2...HEAD
+[Unreleased]: https://github.com/giantswarm/squid-proxy-app/compare/v0.1.3...HEAD
+[0.1.3]: https://github.com/giantswarm/squid-proxy-app/compare/v0.1.2...v0.1.3
 [0.1.2]: https://github.com/giantswarm/squid-proxy-app/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/giantswarm/squid-proxy-app/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/giantswarm/squid-proxy-app/releases/tag/v0.1.0
