@@ -20,6 +20,9 @@
                 "service": {
                     "type": "object",
                     "properties": {
+                        "name": {
+                            "type": "string"
+                        },
                         "public": {
                             "type": "boolean"
                         }
