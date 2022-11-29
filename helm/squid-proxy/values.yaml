@@ -8,7 +8,7 @@ project:
 image:
   registry: docker.io
   name: giantswarm/squid
-  tag: 5.2-22.04_beta
+  tag: 5.2-22.04_beta-giantswarm
   pullPolicy: IfNotPresent
 
 controller:
