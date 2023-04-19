@@ -1,11 +1,6 @@
 [![CircleCI](https://circleci.com/gh/giantswarm/squid-proxy-app.svg?style=shield)](https://circleci.com/gh/giantswarm/squid-proxy-app)
 
-# squid-proxy-app chart
+# squid-proxy-app
 
-Giant Swarm offers a squid-proxy-app App which can be installed in workload clusters.
-Here we define the squid-proxy-app chart with its templates and default configuration.
-
-**What is this app?**
-
-**Why did we add it?**
-
+On private clusters we want the traffic that flows outside the cluster to go through a proxy that's provided by the customer.
+In order to test that scenario, we need to deploy our own proxy on our installations. We use this app for that purpose. 
