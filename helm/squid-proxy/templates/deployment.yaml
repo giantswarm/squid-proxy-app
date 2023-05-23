@@ -40,7 +40,7 @@ spec:
         ports:
         - name: http
           containerPort: 3128
-          securityContext:
-            {{- with .Values.securityContext }}
-              {{- . | toYaml | nindent 12 }}
-            {{- end }}
+        securityContext:
+          {{- with .Values.securityContext }}
+            {{- . | toYaml | nindent 12 }}
+          {{- end }}
