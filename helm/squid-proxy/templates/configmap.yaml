@@ -1,0 +1,41 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "resource.default.name"  . }}
+  namespace: {{ include "resource.default.namespace"  . }}
+  labels:
+  {{- include "labels.common" . | nindent 4 }}
+data:
+  allowlist.conf: -|
+    acl whitelist dstdomain "/etc/squid/conf.d/allowlist-domains"
+    http_access allow whitelist
+  allowlist-domains: -|
+    *.alpinelinux.org
+    *.amazonaws.com
+    ec2.eu-west-2.amazonaws.com
+    sts.eu-central-1.amazonaws.com
+    giantswarm.azurecr.io
+    giantswarmpublic.azurecr.io
+    giantswarm.eu.auth0.com
+    *.cloudfront.net
+    *.docker.com
+    production.cloudflare.docker.com
+    *.docker.io
+    *.flatcar-linux.org
+    *.github.com
+    *.github.io
+    k8s.gcr.io
+    storage.googleapis.com
+    grafana.com
+    prometheus-us-central1.grafana.net
+    vault.operations.giantswarm.io
+    schema.giantswarm.io
+    registry.k8s.io
+    *.keybase.io
+    *.api.letsencrypt.org
+    api.opsgenie.com
+    *.quay.io
+    o346224.ingest.sentry.io
+    hooks.slack.com
+    api.cloudflare.com
+    api.mailgun.net
