@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Add allowlist configuration
+
+### Added
+
 - Add necessary values for PSS policy warnings. 
 
 ## [0.2.1] - 2022-11-29
