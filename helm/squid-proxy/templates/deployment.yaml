@@ -50,5 +50,5 @@ spec:
       volumes:
       - name: conf
         configMap:
-          name: {{ include "name" . }}-squid-configuration
+          name: {{ include "name" . }}
 

@@ -9,21 +9,22 @@ data:
   allowlist.conf: -|
     acl whitelist dstdomain "/etc/squid/conf.d/allowlist-domains"
     http_access allow whitelist
+    http_access deny all
   allowlist-domains: -|
-    *.alpinelinux.org
-    *.amazonaws.com
+    .alpinelinux.org
+    .amazonaws.com
     ec2.eu-west-2.amazonaws.com
     sts.eu-central-1.amazonaws.com
     giantswarm.azurecr.io
     giantswarmpublic.azurecr.io
     giantswarm.eu.auth0.com
-    *.cloudfront.net
-    *.docker.com
+    .cloudfront.net
+    .docker.com
     production.cloudflare.docker.com
-    *.docker.io
-    *.flatcar-linux.org
-    *.github.com
-    *.github.io
+    .docker.io
+    .flatcar-linux.org
+    .github.com
+    .github.io
     k8s.gcr.io
     storage.googleapis.com
     grafana.com
@@ -31,11 +32,9 @@ data:
     vault.operations.giantswarm.io
     schema.giantswarm.io
     registry.k8s.io
-    *.keybase.io
-    *.api.letsencrypt.org
+    .keybase.io
+    .api.letsencrypt.org
     api.opsgenie.com
-    *.quay.io
+    .quay.io
     o346224.ingest.sentry.io
     hooks.slack.com
-    api.cloudflare.com
-    api.mailgun.net
