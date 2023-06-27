@@ -44,3 +44,11 @@ spec:
           {{- with .Values.securityContext }}
             {{- . | toYaml | nindent 12 }}
           {{- end }}
+      volumeMounts:
+        - mountPath: /etc/squid/conf.d/
+          name: conf
+      volumes:
+      - name: conf
+        configMap:
+          name: {{ include "name" . }}
+
