@@ -13,28 +13,31 @@ data:
   allowlist-domains: -|
     .alpinelinux.org
     .amazonaws.com
-    ec2.eu-west-2.amazonaws.com
-    sts.eu-central-1.amazonaws.com
-    giantswarm.azurecr.io
-    giantswarmpublic.azurecr.io
-    giantswarm.eu.auth0.com
-    .cloudfront.net
-    .docker.com
-    production.cloudflare.docker.com
-    .docker.io
-    .flatcar-linux.org
-    .github.com
-    .github.io
-    k8s.gcr.io
-    storage.googleapis.com
-    grafana.com
-    prometheus-us-central1.grafana.net
-    vault.operations.giantswarm.io
-    schema.giantswarm.io
-    registry.k8s.io
-    .keybase.io
     .api.letsencrypt.org
     api.opsgenie.com
-    .quay.io
-    o346224.ingest.sentry.io
+    .cloudfront.net
+    .docker.com
+    .docker.io
+    ec2.eu-west-2.amazonaws.com
+    .flatcar-linux.org
+    giantswarm.azurecr.io
+    giantswarm.eu.auth0.com
+    giantswarmpublic.azurecr.io
+    .github.com
+    .github.io
+    grafana.com
+    graph.microsoft.com
     hooks.slack.com
+    k8s.gcr.io
+    .keybase.io
+    login.microsoftonline.com
+    o346224.ingest.sentry.io
+    production.cloudflare.docker.com
+    prometheus-us-central1.grafana.net
+    .quay.io
+    raw.githubusercontent.com
+    registry.k8s.io
+    schema.giantswarm.io
+    storage.googleapis.com
+    sts.eu-central-1.amazonaws.com
+    vault.operations.giantswarm.io
