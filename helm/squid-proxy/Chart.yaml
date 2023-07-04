@@ -11,4 +11,4 @@ home: https://github.com/giantswarm/squid-proxy-app
 
 version: [[ .Version ]]
 annotations:
-  application.giantswarm.io/team: team-hydra
+  application.giantswarm.io/team: phoenix
