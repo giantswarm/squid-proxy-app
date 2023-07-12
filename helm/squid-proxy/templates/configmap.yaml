@@ -15,10 +15,13 @@ data:
     .amazonaws.com
     .api.letsencrypt.org
     api.opsgenie.com
+    azure.microsoft.com
+    .blob.core.windows.net
     .cloudfront.net
     .docker.com
     .docker.io
     ec2.eu-west-2.amazonaws.com
+    europe-north1-docker.pkg.dev
     .flatcar-linux.org
     giantswarm.azurecr.io
     giantswarm.eu.auth0.com
