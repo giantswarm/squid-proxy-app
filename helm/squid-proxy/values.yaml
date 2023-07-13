@@ -27,7 +27,7 @@ provider: "aws"
 
 # Add seccomp to pod security context
 podSecurityContext:
-  runAsNonRoot: true
+  runAsNonRoot: false
   seccompProfile:
     type: RuntimeDefault
 
