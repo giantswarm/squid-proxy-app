@@ -31,19 +31,12 @@ spec:
         fsGroup: 0
         supplementalGroups:
         - 0
-        {{- with .Values.podSecurityContext }}
-          {{- . | toYaml | nindent 8 }}
-        {{- end }}
       containers:
       - name: squid
         image: {{ .Values.image.registry }}/{{ .Values.image.name }}:{{ .Values.image.tag }}
         ports:
         - name: http
           containerPort: 3128
-        securityContext:
-          {{- with .Values.securityContext }}
-            {{- . | toYaml | nindent 12 }}
-          {{- end }}
       volumeMounts:
         - mountPath: /etc/squid/conf.d/
           name: conf
