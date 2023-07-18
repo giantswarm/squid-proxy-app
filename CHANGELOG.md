@@ -7,11 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Fix PSP permissions for the pod
+
 ## [0.3.3] - 2023-07-18
 
 ### Changed
 
-- Update squid docker iamge and adjust setting in order to run on Flatcar.
+- Update squid docker image and adjust setting in order to run on Flatcar.
 
 ## [0.3.2] - 2023-07-13
 
