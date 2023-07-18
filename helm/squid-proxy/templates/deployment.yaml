@@ -28,9 +28,9 @@ spec:
       serviceAccountName: {{ include "name"  . }}
       priorityClassName: system-cluster-critical
       securityContext:
-        fsGroup: 0
+        fsGroup: 13
         supplementalGroups:
-        - 0
+        - 13
         {{- with .Values.podSecurityContext }}
           {{- . | toYaml | nindent 8 }}
         {{- end }}

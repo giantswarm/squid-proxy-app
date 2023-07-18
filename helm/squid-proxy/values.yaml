@@ -8,7 +8,7 @@ project:
 image:
   registry: docker.io
   name: giantswarm/squid
-  tag: 5.2-22.04_beta-giantswarm
+  tag: 5.2-22.04_beta-giantswarm_gs1
   pullPolicy: IfNotPresent
 
 controller:
@@ -39,3 +39,5 @@ securityContext:
   capabilities:
     drop:
     - ALL
+    add:
+    - NET_ADMIN
