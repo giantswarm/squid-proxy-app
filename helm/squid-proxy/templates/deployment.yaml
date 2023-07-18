@@ -28,6 +28,8 @@ spec:
       serviceAccountName: {{ include "name"  . }}
       priorityClassName: system-cluster-critical
       securityContext:
+        runAsGroup: 13
+        runAsUser: 13
         fsGroup: 13
         supplementalGroups:
         - 13
