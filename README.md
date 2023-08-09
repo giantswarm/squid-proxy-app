@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/giantswarm/squid-proxy-app.svg?style=shield)](https://circleci.com/gh/giantswarm/squid-proxy-app)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/giantswarm/squid-proxy-app/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/giantswarm/squid-proxy-app/tree/main)
 
 # squid-proxy-app
 
