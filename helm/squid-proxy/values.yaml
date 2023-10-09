@@ -41,3 +41,7 @@ securityContext:
     - ALL
     add:
     - NET_BIND_SERVICE
+
+global:
+  podSecurityStandards:
+    enforced: false
