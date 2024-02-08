@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add `sts.eu-north-1.amazonaws.com` to allowed domains.
+
 ## [0.4.0] - 2023-12-07
 
 ### Added
