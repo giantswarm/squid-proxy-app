@@ -43,4 +43,5 @@ data:
     schema.giantswarm.io
     storage.googleapis.com
     sts.eu-central-1.amazonaws.com
+    sts.eu-north-1.amazonaws.com
     vault.operations.giantswarm.io
