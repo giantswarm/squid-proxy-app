@@ -47,10 +47,15 @@ spec:
             {{- . | toYaml | nindent 12 }}
           {{- end }}
         volumeMounts:
-        - mountPath: /etc/squid/conf.d/
+        - mountPath: /etc/squid/conf.d/allowlist-domains
           name: conf
+          subPath: allowlist-domains
+        - mountPath: /etc/squid/conf.d/allowlist.conf
+          name: conf
+          subPath: allowlist.conf
       volumes:
       - name: conf
         configMap:
           name: {{ include "name" . }}
+
 

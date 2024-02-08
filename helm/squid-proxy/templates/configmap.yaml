@@ -6,11 +6,11 @@ metadata:
   labels:
   {{- include "labels.common" . | nindent 4 }}
 data:
-  allowlist.conf: -|
+  allowlist.conf: |
     acl whitelist dstdomain "/etc/squid/conf.d/allowlist-domains"
     http_access allow whitelist
     http_access deny all
-  allowlist-domains: -|
+  allowlist-domains: |
     .alpinelinux.org
     .amazonaws.com
     .api.letsencrypt.org
