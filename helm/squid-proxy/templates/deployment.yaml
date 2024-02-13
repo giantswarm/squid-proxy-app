@@ -28,9 +28,11 @@ spec:
       serviceAccountName: {{ include "name"  . }}
       priorityClassName: system-cluster-critical
       securityContext:
-        fsGroup: 0
+        runAsGroup: 13
+        runAsUser: 13
+        fsGroup: 13
         supplementalGroups:
-        - 0
+        - 13
         {{- with .Values.podSecurityContext }}
           {{- . | toYaml | nindent 8 }}
         {{- end }}
@@ -44,11 +46,16 @@ spec:
           {{- with .Values.securityContext }}
             {{- . | toYaml | nindent 12 }}
           {{- end }}
-      volumeMounts:
-        - mountPath: /etc/squid/conf.d/
+        volumeMounts:
+        - mountPath: /etc/squid/conf.d/allowlist-domains
           name: conf
+          subPath: allowlist-domains
+        - mountPath: /etc/squid/conf.d/allowlist.conf
+          name: conf
+          subPath: allowlist.conf
       volumes:
       - name: conf
         configMap:
           name: {{ include "name" . }}
+
 

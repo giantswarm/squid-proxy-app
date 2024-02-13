@@ -6,9 +6,9 @@ project:
   commit: "[[ .SHA ]]"
 
 image:
-  registry: docker.io
+  registry: gsoci.azurecr.io
   name: giantswarm/squid
-  tag: 5.2-22.04_beta-giantswarm
+  tag: 5.6-22.10_beta-giantswarm_gs1
   pullPolicy: IfNotPresent
 
 controller:
@@ -27,7 +27,7 @@ provider: "aws"
 
 # Add seccomp to pod security context
 podSecurityContext:
-  runAsNonRoot: true
+  runAsNonRoot: false
   seccompProfile:
     type: RuntimeDefault
 
@@ -38,4 +38,10 @@ securityContext:
     type: RuntimeDefault
   capabilities:
     drop:
-    - ALL
+      - ALL
+    add:
+      - NET_BIND_SERVICE
+
+global:
+  podSecurityStandards:
+    enforced: false

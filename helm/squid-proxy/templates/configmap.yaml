@@ -6,11 +6,11 @@ metadata:
   labels:
   {{- include "labels.common" . | nindent 4 }}
 data:
-  allowlist.conf: -|
+  allowlist.conf: |
     acl whitelist dstdomain "/etc/squid/conf.d/allowlist-domains"
     http_access allow whitelist
     http_access deny all
-  allowlist-domains: -|
+  allowlist-domains: |
     .alpinelinux.org
     .amazonaws.com
     .api.letsencrypt.org
@@ -23,6 +23,7 @@ data:
     ec2.eu-west-2.amazonaws.com
     europe-north1-docker.pkg.dev
     .flatcar-linux.org
+    ghcr.io
     giantswarm.azurecr.io
     giantswarm.eu.auth0.com
     giantswarmpublic.azurecr.io
@@ -32,17 +33,23 @@ data:
     grafana.com
     .grafana.org
     graph.microsoft.com
+    gsoci.azurecr.io
+    gsociprivate.azurecr.io
     hooks.slack.com
     k8s.gcr.io
     .keybase.io
     login.microsoftonline.com
     o346224.ingest.sentry.io
+    pkg-containers.githubusercontent.com
     production.cloudflare.docker.com
     prometheus-us-central1.grafana.net
     .quay.io
     raw.githubusercontent.com
     registry.k8s.io
     schema.giantswarm.io
+    .sigstore.dev
     storage.googleapis.com
     sts.eu-central-1.amazonaws.com
+    sts.eu-north-1.amazonaws.com
+    teleport.giantswarm.io
     vault.operations.giantswarm.io

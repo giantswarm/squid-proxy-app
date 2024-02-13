@@ -1,7 +1,9 @@
-{{- if .Values.podSecurityPolicy.enabled -}}
+{{- if not .Values.global.podSecurityStandards.enforced }}
 apiVersion: policy/v1beta1
 kind: PodSecurityPolicy
 metadata:
+  annotations:
+    seccomp.security.alpha.kubernetes.io/allowedProfileNames: '*'
   name: {{ include "name" . }}
   namespace: {{ .Release.Namespace }}
   labels:
