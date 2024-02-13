@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Fix `external-dns.alpha.kubernetes.io/hostname` annotation.
+
 ## [0.5.3] - 2024-02-09
 
 ### Added

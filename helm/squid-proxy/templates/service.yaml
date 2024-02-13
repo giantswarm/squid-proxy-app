@@ -3,7 +3,7 @@ kind: Service
 metadata:
   annotations:
   {{- if .Values.baseDomain }}
-    external-dns.alpha.kubernetes.io/hostname: "proxy.{{ .Values.baseDomain }}"
+    external-dns.alpha.kubernetes.io/hostname: "proxy.{{ .Values.clusterID }}.{{ .Values.baseDomain }}"
     giantswarm.io/external-dns: managed
   {{- end }}
   {{- if or (eq .Values.provider "aws") (eq .Values.provider "capa") }}
