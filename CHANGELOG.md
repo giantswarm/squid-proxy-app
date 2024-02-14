@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Allow `.gigantic.io` and `.grafana.org` domains and subdomains.
+
 ## [0.5.4] - 2024-02-13
 
 ### Fixed

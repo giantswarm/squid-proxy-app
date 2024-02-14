@@ -27,9 +27,11 @@ data:
     giantswarm.azurecr.io
     giantswarm.eu.auth0.com
     giantswarmpublic.azurecr.io
+    .gigantic.io
     .github.com
     .github.io
     grafana.com
+    .grafana.org
     graph.microsoft.com
     gsoci.azurecr.io
     gsociprivate.azurecr.io
