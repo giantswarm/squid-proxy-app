@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.0] - 2024-05-02
+
 ### Changed
 
 - Allow `.slack.com` in order to allow Alertmanager to use new Slack API (at `https://slack.com/api`) and also keep backward compatibility with the old Slack Webhooks API (at `https://hooks.slack.com`).
@@ -101,7 +103,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - add base template
 - changed: `app.giantswarm.io` label group was changed to `application.giantswarm.io`
 
-[Unreleased]: https://github.com/giantswarm/squid-proxy-app/compare/v0.5.5...HEAD
+[Unreleased]: https://github.com/giantswarm/squid-proxy-app/compare/v0.6.0...HEAD
+[0.6.0]: https://github.com/giantswarm/squid-proxy-app/compare/v0.5.5...v0.6.0
 [0.5.5]: https://github.com/giantswarm/squid-proxy-app/compare/v0.5.4...v0.5.5
 [0.5.4]: https://github.com/giantswarm/squid-proxy-app/compare/v0.5.3...v0.5.4
 [0.5.3]: https://github.com/giantswarm/squid-proxy-app/compare/v0.5.2...v0.5.3
