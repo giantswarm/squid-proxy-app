@@ -35,7 +35,7 @@ data:
     graph.microsoft.com
     gsoci.azurecr.io
     gsociprivate.azurecr.io
-    hooks.slack.com
+    .slack.com
     k8s.gcr.io
     .keybase.io
     login.microsoftonline.com

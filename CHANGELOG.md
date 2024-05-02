@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Allow `.slack.com` in order to allow Alertmanager to use new Slack API (at `https://slack.com/api`) and also keep backward compatibility with the old Slack Webhooks API (at `https://hooks.slack.com`).
+
 ## [0.5.5] - 2024-02-14
 
 ### Added
