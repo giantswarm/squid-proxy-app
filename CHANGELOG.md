@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.6.1] - 2024-10-03
 
+### Added
+
+- Allow `xpkg.upbound.io` in order to allow downloading the crossplane providers.
+
 ## [0.6.0] - 2024-05-02
 
 ### Changed
