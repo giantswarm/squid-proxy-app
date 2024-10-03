@@ -53,3 +53,4 @@ data:
     sts.eu-north-1.amazonaws.com
     teleport.giantswarm.io
     vault.operations.giantswarm.io
+    xpkg.upbound.io
