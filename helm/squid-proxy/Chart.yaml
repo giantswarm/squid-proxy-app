@@ -1,14 +1,15 @@
 apiVersion: v2
-appVersion: "5.2-22.04_beta"
-
-# Please make sure your name DOES NOT end in "app" or "-app".
 name: squid-proxy
-
-# Please describe what the app provides in a sentence or two.
 description: squid proxy for giantswarm internal use
-
 home: https://github.com/giantswarm/squid-proxy-app
-
-version: [[ .Version ]]
+version: 0.0.1-dev
+appVersion: 0.0.1-dev
+icon: https://s.giantswarm.io/app-icons/proxy/1/light.svg
 annotations:
   application.giantswarm.io/team: phoenix
+  config.giantswarm.io/version: 1.x.x
+  ui.giantswarm.io/logo: https://s.giantswarm.io/app-icons/proxy/1/light.svg
+restrictions:
+  clusterSingleton: true
+  fixedNamespace: kube-system
+  gpuInstances: false
