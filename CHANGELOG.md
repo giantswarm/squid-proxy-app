@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Removed
+
+- Remove auth0 (`giantswarm.eu.auth0.com`).
+
 ## [0.6.1] - 2024-10-03
 
 ### Added
