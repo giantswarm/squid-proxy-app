@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add `api.eu.pagerduty.com` to allowed domains.
+
 ### Removed
 
 - Remove auth0 (`giantswarm.eu.auth0.com`).

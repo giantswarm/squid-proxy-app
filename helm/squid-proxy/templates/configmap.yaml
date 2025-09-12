@@ -13,6 +13,7 @@ data:
   allowlist-domains: |
     .alpinelinux.org
     .amazonaws.com
+    api.eu.pagerduty.com
     .api.letsencrypt.org
     api.opsgenie.com
     azure.microsoft.com
