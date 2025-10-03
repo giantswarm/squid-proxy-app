@@ -21,7 +21,6 @@ data:
     .cloudfront.net
     .docker.com
     .docker.io
-    ec2.eu-west-2.amazonaws.com
     europe-north1-docker.pkg.dev
     .flatcar-linux.org
     ghcr.io
@@ -31,6 +30,7 @@ data:
     .github.com
     .github.io
     grafana.com
+    .grafana.net
     .grafana.org
     graph.microsoft.com
     gsoci.azurecr.io
@@ -41,16 +41,12 @@ data:
     login.microsoftonline.com
     o346224.ingest.sentry.io
     pkg-containers.githubusercontent.com
-    production.cloudflare.docker.com
-    prometheus-us-central1.grafana.net
     .quay.io
     raw.githubusercontent.com
     registry.k8s.io
     schema.giantswarm.io
     .sigstore.dev
     storage.googleapis.com
-    sts.eu-central-1.amazonaws.com
-    sts.eu-north-1.amazonaws.com
     teleport.giantswarm.io
     vault.operations.giantswarm.io
     xpkg.upbound.io
