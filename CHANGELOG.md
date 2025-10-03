@@ -10,10 +10,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Add `api.eu.pagerduty.com` to allowed domains.
+- Add `.grafana.net` to allowed domains.
 
 ### Removed
 
 - Remove auth0 (`giantswarm.eu.auth0.com`).
+- Removed redundant domains.
 
 ## [0.6.1] - 2024-10-03
 
