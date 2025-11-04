@@ -20,6 +20,7 @@ data:
     .blob.core.windows.net
     .cloudfront.net
     cronitor.io
+    cronitor.link
     .docker.com
     .docker.io
     europe-north1-docker.pkg.dev
