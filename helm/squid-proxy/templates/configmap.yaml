@@ -19,6 +19,7 @@ data:
     azure.microsoft.com
     .blob.core.windows.net
     .cloudfront.net
+    cronitor.io
     .docker.com
     .docker.io
     europe-north1-docker.pkg.dev
