@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.5] - 2025-11-12
+
 ### Fixed
 
 - Replace `api.eu.pagerduty.com` with `events.eu.pagerduty.com`
@@ -137,7 +139,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - add base template
 - changed: `app.giantswarm.io` label group was changed to `application.giantswarm.io`
 
-[Unreleased]: https://github.com/giantswarm/squid-proxy-app/compare/v0.6.4...HEAD
+[Unreleased]: https://github.com/giantswarm/squid-proxy-app/compare/v0.6.5...HEAD
+[0.6.5]: https://github.com/giantswarm/squid-proxy-app/compare/v0.6.4...v0.6.5
 [0.6.4]: https://github.com/giantswarm/squid-proxy-app/compare/v0.6.3...v0.6.4
 [0.6.3]: https://github.com/giantswarm/squid-proxy-app/compare/v0.6.2...v0.6.3
 [0.6.2]: https://github.com/giantswarm/squid-proxy-app/compare/v0.6.1...v0.6.2
