@@ -46,6 +46,8 @@ spec:
           {{- with .Values.securityContext }}
             {{- . | toYaml | nindent 12 }}
           {{- end }}
+        resources:
+          {{- toYaml .Values.resources | nindent 12 }}
         volumeMounts:
         - mountPath: /etc/squid/conf.d/allowlist-domains
           name: conf

@@ -1,0 +1,9 @@
+checks:
+  exclude:
+    # Squid proxy needs writable filesystem for caching
+    - no-read-only-root-fs
+    # Squid runs as user 13 (proxy user) which is non-root but KubeLinter may not recognize it
+    - run-as-non-root
+    # Anti-affinity is optional for this internal proxy
+    - no-anti-affinity
+

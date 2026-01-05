@@ -3,3 +3,4 @@ generate-metadata: true
 chart-dir: ./helm/squid-proxy
 destination: build
 catalog-base-url: https://giantswarm.github.io/giantswarm-playground-test-catalog/
+kubelinter-config: .abs/.kube-linter.yaml
