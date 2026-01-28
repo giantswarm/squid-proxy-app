@@ -8,7 +8,8 @@ name: squid-proxy
 description: squid proxy for giantswarm internal use
 
 home: https://github.com/giantswarm/squid-proxy-app
+icon: https://s.giantswarm.io/app-icons/giantswarm/1/dark.svg
 
-version: [[ .Version ]]
+version: 0.6.5-dev
 annotations:
-  application.giantswarm.io/team: phoenix
+  io.giantswarm.application.team: phoenix
