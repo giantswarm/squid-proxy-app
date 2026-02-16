@@ -50,14 +50,6 @@
         "name": {
             "type": "string"
         },
-        "podSecurityPolicy": {
-            "type": "object",
-            "properties": {
-                "enabled": {
-                    "type": "boolean"
-                }
-            }
-        },
         "provider": {
             "type": "string"
         },
@@ -129,19 +121,6 @@
                     "properties": {
                         "memory": {
                             "type": "string"
-                        }
-                    }
-                }
-            }
-        },
-        "global": {
-            "type": "object",
-            "properties": {
-                "podSecurityStandards": {
-                    "type": "object",
-                    "properties": {
-                        "enforced": {
-                            "type": "boolean"
                         }
                     }
                 }

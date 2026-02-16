@@ -16,9 +16,6 @@ controller:
     name: squid-proxy
     public: true
 
-podSecurityPolicy:
-  enabled: true
-
 provider: "aws"
 
 # Add seccomp to pod security context
@@ -44,7 +41,3 @@ resources:
     memory: 128Mi
   limits:
     memory: 256Mi
-
-global:
-  podSecurityStandards:
-    enforced: false
