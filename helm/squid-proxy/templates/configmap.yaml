@@ -27,7 +27,6 @@ data:
     .flatcar-linux.org
     ghcr.io
     giantswarm.azurecr.io
-    giantswarmpublic.azurecr.io
     .gigantic.io
     .github.com
     .github.io
