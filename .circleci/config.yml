@@ -11,6 +11,8 @@ workflows:
         name: package and push squid-proxy chart
         app_catalog: giantswarm-playground-catalog
         app_catalog_test: giantswarm-playground-test-catalog
+        override_app_version: false
+        override_chart_version: true
         chart: squid-proxy
           # Trigger job on git tag.
         filters:
