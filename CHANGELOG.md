@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 
+- Removed decommissioned `giantswarmpublic.azurecr.io` registry from the egress allowlist (charts moved to `gsoci.azurecr.io`).
 - Removed `PodSecurityPolicy`.
 - Removed `podSecurityPolicy.enabled` helm value.
 - Removed `global.podSecurityStandards.enforced` helm value.
